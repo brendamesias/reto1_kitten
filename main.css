@@ -1,0 +1,43 @@
+body{
+    background-image: url(images/sunny-day.jpg);
+}
+#medium{
+  display: none;
+}
+#small{
+  display: none;
+}
+#large{
+  display: block;
+  padding-top: 25%;
+}
+@media screen and (min-width: 500px) and (max-width:900px) {
+  body{
+    background-image: url(images/night.jpg);
+  }
+  #medium{
+    display: block;
+    padding-top: 45%;
+  }
+  #small{
+    display: none;
+  }
+  #large{
+    display: none;
+  }
+}
+@media screen and (max-width:500px) {
+  body{
+    background-image: url(images/dawn.png);
+  }
+  #medium{
+    display: none;
+  }
+  #large{
+    display: none;
+  }
+  #small{
+    display: block;
+    padding-top: 75%;
+  }
+}
